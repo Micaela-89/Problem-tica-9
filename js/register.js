@@ -50,6 +50,17 @@ var labels = function () {
 }
 labels();
 
+var validAnchor = function (){
+    var anchor = document.querySelectorAll('submit').href;
+    var validAnchor = "login.html";
+    if (anchor = validAnchor) {
+        validations.append(validText + " " + 'Valid anchor' + " ");
+    }
+    else {
+        validations.append(validText + " " + 'Wrong anchor' + " ");
+    }
+}
+validAnchor ();
 
 var validBtns = function() {
     var submitBtn = document.querySelector('.submitBtn').nodeValue;
@@ -72,11 +83,13 @@ var validateAll = function () {
     divHidden.className = 'validations';
     if ((formExists = true) && (inputsQuantity = true) && (requiredInputs = true) &&
     (labels = true) && (validBtns = true)){
-        validations.style.backgroundColor= 'green';
+        validations.style.backgroundColor = 'green';
+        validations.style.color= 'white';
         validations.textContent =  'Every validation has passed!';
 }
     else {
         validations.style.backgroundColor = 'red';
+        validations.style.color= 'white';
         validations.textContent = errors;
 }
     }
