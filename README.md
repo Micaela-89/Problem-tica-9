@@ -1,4 +1,4 @@
-# 'BECOME A QA AUTOMATION' - Week 9- Unit tests.
+# 'BECOME A QA AUTOMATION' - Week 9- Login and Register Forms".
 
 This project consists of creating a Login and a Register Form using HTML, CSS, and JavaScript
 
